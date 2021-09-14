@@ -13,73 +13,61 @@ $blue-transparent: #bcd0e5;
 $headline-font: 'Oswald', sans-serif; 
 $paragraph-font: 'Roboto', sans-serif;
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&family=Roboto&display=swap');
-
-//example styles
-#style-guide-example {
-    .brand {
-        width: 300px;
-        height: auto;
-    }
-    h1,h2,h3,h4,h5,h6 {
-        font-family: $headline-font; 
-        color: $dark-gray;
-    }
-    p, span, a {
-       font-family: $paragraph-font; 
-       color: $dark-gray;
-    }
-    a {
+h1,h2,h3,h4,h5,h6 {
+    font-family: $headline-font; 
+    color: $dark-gray;
+}
+p, span, a {
+   font-family: $paragraph-font; 
+   color: $dark-gray;
+}
+a {
+    color: $primary-orange;
+    &:visited {
         color: $primary-orange;
-        &:visited {
-            color: $primary-orange;
-        }
-        &:hover {
-            text-decoration: none;
-        }
     }
-    .color-swatch {
-        height: 100%;
-        position: relative;
-        flex-direction: column;
-        text-align: center;
-        min-width: 120px;
-            &_primary-orange {
-                background: $primary-orange;
-                padding: 3rem;
-                height: auto;
-            }
-            &_secondary-orange {
-                background: $secondary-orange;
-                padding: 3rem;
-                height: auto;
-                
-            }
-            &_silver {
-                background: $silver;
-                padding: 3rem;
-                height: auto;
-            }
-            &_dark-gray {
-                background: $dark-gray;
-                padding: 3rem;
-                height: auto;
-            }
-            &_pure-gray {
-                background: $pure-gray;
-                padding: 3rem;
-                height: auto;
-            }
-            &_blue-modern {
-                background: $blue-modern;
-                padding: 3rem;
-                height: auto;
-            }
-            &_blue-transparent {
-                background: $blue-transparent;
-                padding: 3rem;
-                height: auto;
-            }
+    &:hover {
+        text-decoration: none;
     }
 }
+
+//Button styles
+.btn {
+    border-radius: 100px;
+    border-width: 4px;
+    text-transform: uppercase;
+
+    &.btn-primary {
+        color: #fff;
+        background-color: $blue-modern;
+        border-color: $blue-modern;
+    }
+    &.btn-secondary {
+        color: #fff;
+        background-color: $dark-gray;
+        border-color: $dark-gray;
+    }
+    &.btn-outline-primary {
+        color: $blue-modern;
+        border-color: $blue-modern;
+        &:hover {
+            background-color: transparent;
+            color: $blue-modern;
+            border-color: $blue-modern; 
+        }
+    }
+    &.btn-outline-secondary {
+        color: $dark-gray;
+        border-color: $dark-gray;
+        &:hover {
+            background-color: transparent;
+            color: $dark-gray;
+            border-color: $dark-gray; 
+        }
+    }
+}
+
+
+
+
 
