@@ -1,71 +1,24 @@
-@use 'custom' as *;
+//IMPORT BOOTSTRAP 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-//BRAND COLORS
-$primary-orange: #eeb311;
-$secondary-orange: #ecbd8b;
-$silver: #b0b5b5;
-$dark-gray: #222830;
-$pure-gray: #004c56;
-$blue-modern: #244e81;
-$blue-transparent: #bcd0e5;
+//IMPORT COMPONENTS
+@import "components/variables.scss";
+@import "components/buttons";
+@import "components/typography.scss";
 
-//BRAND FONTS
-$headline-font: 'Oswald', sans-serif; 
-$paragraph-font: 'Roboto', sans-serif;
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: $headline-font; 
-    color: $dark-gray;
-}
-p, span, a {
-   font-family: $paragraph-font; 
-   color: $dark-gray;
-}
-a {
-    color: $primary-orange;
-    &:visited {
-        color: $primary-orange;
-    }
-    &:hover {
-        text-decoration: none;
-    }
-}
+//IMPORT SECTIONS
+@import "sections/navbar";
+@import "sections/intro_section";
+@import "sections/contactus";
+@import "sections/menu";
+@import "sections/socialmedia";
+@import "sections/aboutus";
+@import "sections/footer";
 
-//Button styles
-.btn {
-    border-radius: 100px;
-    border-width: 4px;
-    text-transform: uppercase;
 
-    &.btn-primary {
-        color: #fff;
-        background-color: $blue-modern;
-        border-color: $blue-modern;
-    }
-    &.btn-secondary {
-        color: #fff;
-        background-color: $dark-gray;
-        border-color: $dark-gray;
-    }
-    &.btn-outline-primary {
-        color: $blue-modern;
-        border-color: $blue-modern;
-        &:hover {
-            background-color: transparent;
-            color: $blue-modern;
-            border-color: $blue-modern; 
-        }
-    }
-    &.btn-outline-secondary {
-        color: $dark-gray;
-        border-color: $dark-gray;
-        &:hover {
-            background-color: transparent;
-            color: $dark-gray;
-            border-color: $dark-gray; 
-        }
-    }
-}
+
+
 
 
 

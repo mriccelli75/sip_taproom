@@ -1,0 +1,43 @@
+.menu {
+    background-color: #fff;
+    box-shadow: 0 0 7px rgba(0,0,0,.1)!important;
+
+    .brand-logo {
+        width: 60px;
+        height: auto;
+        margin-right: .5rem;
+    }
+   // Dark links against a light background
+    .navbar-brand {
+        color: $dark-gray;
+        font-family: $headline-font;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        flex-direction: row; 
+        transition: all 0.5s;
+       
+        &:hover,
+        &:focus {
+            color: $primary-orange;
+        }
+    }
+ .navbar-nav {
+
+        .nav-item {
+            
+            .nav-link {
+                color: $dark-gray;
+                font-family: $paragraph-font; 
+                transition: all 0.5s;
+
+                &:hover,
+                &:focus {
+                    color: $primary-orange;
+                }
+            }
+        }
+    }
+}

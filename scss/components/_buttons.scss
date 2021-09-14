@@ -1,0 +1,35 @@
+//Button styles
+.btn {
+    border-radius: 100px;
+    border-width: 4px;
+    text-transform: uppercase;
+
+    &.btn-primary {
+        color: #fff;
+        background-color: $blue-modern;
+        border-color: $blue-modern;
+    }
+    &.btn-secondary {
+        color: #fff;
+        background-color: $dark-gray;
+        border-color: $dark-gray;
+    }
+    &.btn-outline-primary {
+        color: $blue-modern;
+        border-color: $blue-modern;
+        &:hover {
+            background-color: transparent;
+            color: $blue-modern;
+            border-color: $blue-modern; 
+        }
+    }
+    &.btn-outline-secondary {
+        color: $dark-gray;
+        border-color: $dark-gray;
+        &:hover {
+            background-color: transparent;
+            color: $dark-gray;
+            border-color: $dark-gray; 
+        }
+    }
+}

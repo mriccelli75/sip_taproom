@@ -11114,26 +11114,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Oswald", sans-serif;
-  color: #222830;
-}
-
-p, span, a {
-  font-family: "Roboto", sans-serif;
-  color: #222830;
-}
-
-a {
-  color: #eeb311;
-}
-a:visited {
-  color: #eeb311;
-}
-a:hover {
-  text-decoration: none;
-}
-
 .btn {
   border-radius: 100px;
   border-width: 4px;
@@ -11166,6 +11146,65 @@ a:hover {
   background-color: transparent;
   color: #222830;
   border-color: #222830;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "Oswald", sans-serif;
+  color: #222830;
+}
+
+p, span, a {
+  font-family: "Roboto", sans-serif;
+  color: #222830;
+}
+
+a {
+  color: #eeb311;
+}
+a:visited {
+  color: #eeb311;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.menu {
+  background-color: #fff;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1) !important;
+}
+.menu .brand-logo {
+  width: 60px;
+  height: auto;
+  margin-right: 0.5rem;
+}
+.menu .navbar-brand {
+  color: #222830;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  transition: all 0.5s;
+}
+.menu .navbar-brand:hover, .menu .navbar-brand:focus {
+  color: #eeb311;
+}
+.menu .navbar-nav .nav-item .nav-link {
+  color: #222830;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.5s;
+}
+.menu .navbar-nav .nav-item .nav-link:hover, .menu .navbar-nav .nav-item .nav-link:focus {
+  color: #eeb311;
+}
+
+.intro-section {
+  padding: 0 !important;
+}
+.intro-section .intro-content-left {
+  background-color: #eeb311;
 }
 
 /*# sourceMappingURL=style.css.map */
