@@ -11168,9 +11168,35 @@ a:hover {
   text-decoration: none;
 }
 
+.display-2 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  z-index: 3;
+}
+.display-2--intro {
+  display: inline-block;
+  font-weight: 700;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+.display-2--description {
+  font-size: 1rem;
+  display: block;
+  margin-top: 1.2rem;
+  text-transform: none;
+  font-family: "Oswald", sans-serif;
+}
+@media (min-width: 992px) {
+  .display-2--description {
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+}
+
 .menu {
   background-color: #fff;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1) !important;
 }
 .menu .brand-logo {
   width: 60px;
@@ -11191,6 +11217,9 @@ a:hover {
 .menu .navbar-brand:hover, .menu .navbar-brand:focus {
   color: #eeb311;
 }
+.menu .navbar-nav .nav-item {
+  margin-left: 0.5rem;
+}
 .menu .navbar-nav .nav-item .nav-link {
   color: #222830;
   font-family: "Roboto", sans-serif;
@@ -11201,10 +11230,33 @@ a:hover {
 }
 
 .intro-section {
-  padding: 0 !important;
+  padding: 10rem 0 10rem 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url(../../images/bar_photos/placeholder_bar_gray.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.intro-section .intro-content-left {
-  background-color: #eeb311;
+.intro-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(120deg, #244e81, #ecbd8b);
+  opacity: 0.85;
+  z-index: 1;
+}
+.intro-section .hop-art {
+  width: 363px;
+  position: absolute;
+  top: 115px;
+  left: 46px;
+  height: auto;
+  transform: rotate(-10deg);
+  opacity: 0.65;
 }
 
 /*# sourceMappingURL=style.css.map */

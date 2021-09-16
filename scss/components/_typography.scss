@@ -18,3 +18,31 @@ a {
     }
 }
 
+
+.display-2 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: $headline-font;
+    position: relative;
+    z-index: 3;
+    &--intro {
+        display: inline-block;
+        font-weight: 700;
+        color: white;
+        font-family: $headline-font;
+        
+    }
+    &--description {
+        font-size: 1rem;
+        display: block;
+        margin-top: 1.2rem;
+        text-transform: none;
+        font-family: $headline-font;
+        
+        @include media-breakpoint-up(lg) {
+            font-size: 1.5rem;
+            display: inline-block;
+
+        }
+    }
+}

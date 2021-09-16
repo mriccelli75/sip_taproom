@@ -1,8 +1,31 @@
 .intro-section {
-    padding: 0 !important;
-    .intro-content-left {
-        background-color: $primary-orange;
+    padding: 10rem 0 10rem 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../../images/bar_photos/placeholder_bar_gray.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::after {
+        content: ""; // ::before and ::after both require content
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(120deg, $blue-modern, $secondary-orange);
+        opacity: .85;
+        z-index: 1;
     }
-    
-    
+
+    .hop-art {
+        width: 363px;
+        position: absolute;
+        top: 115px;
+        left: 46px;
+        height: auto;
+        transform: rotate(-10deg);
+        opacity: .65;
+    }
 }
