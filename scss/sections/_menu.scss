@@ -1,0 +1,48 @@
+section#ourmenu {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    h1 {
+        font-size: 4rem;
+        color: $dark-gray;
+    }
+    .photo-bx {
+
+        &--left {
+            margin-left: 0;
+        }
+    }
+    div.icon-rule {
+        text-align: center;
+        margin-top: .85rem;
+        margin-bottom: .85rem;
+
+        img {
+            width: 50px;
+        }
+      }
+      
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      
+      .outer-line {
+        width: 25%;
+        border-bottom: 1px solid $blue-modern;
+      }
+      .content-header {
+          h2 {
+              color: $primary-orange;
+          }
+      }
+      img.beer-svg {
+        width: 29px;
+        transform: rotate(-10deg);
+        margin-right: .25rem;
+    }
+    .content-body {
+        padding-left: 1rem;
+    }
+}
+    

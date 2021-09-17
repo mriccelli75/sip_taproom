@@ -11176,21 +11176,28 @@ a:hover {
   z-index: 3;
 }
 .display-2--intro {
-  display: inline-block;
   font-weight: 700;
+  font-size: 3.75;
   color: white;
   font-family: "Oswald", sans-serif;
 }
+@media (min-width: 992px) {
+  .display-2--intro {
+    font-size: 5rem;
+    display: inline-block;
+  }
+}
 .display-2--description {
-  font-size: 1rem;
+  font-size: 1.85rem;
   display: block;
   margin-top: 1.2rem;
   text-transform: none;
   font-family: "Oswald", sans-serif;
+  color: white;
 }
 @media (min-width: 992px) {
   .display-2--description {
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: inline-block;
   }
 }
@@ -11221,18 +11228,20 @@ a:hover {
   margin-left: 0.5rem;
 }
 .menu .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
   color: #222830;
   font-family: "Roboto", sans-serif;
   transition: all 0.5s;
+  font-weight: 700;
 }
 .menu .navbar-nav .nav-item .nav-link:hover, .menu .navbar-nav .nav-item .nav-link:focus {
   color: #eeb311;
 }
 
 .intro-section {
-  padding: 10rem 0 10rem 0;
   width: 100%;
   height: 100%;
+  padding: 135px 0;
   position: relative;
   background: url(../../images/bar_photos/placeholder_bar_gray.png);
   background-repeat: no-repeat;
@@ -11249,14 +11258,48 @@ a:hover {
   opacity: 0.85;
   z-index: 1;
 }
-.intro-section .hop-art {
-  width: 363px;
-  position: absolute;
-  top: 115px;
-  left: 46px;
-  height: auto;
+
+section#ourmenu {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+section#ourmenu h1, section#ourmenu .h1 {
+  font-size: 4rem;
+  color: #222830;
+}
+section#ourmenu .photo-bx--left {
+  margin-left: 0;
+}
+section#ourmenu div.icon-rule {
+  text-align: center;
+  margin-top: 0.85rem;
+  margin-bottom: 0.85rem;
+}
+section#ourmenu div.icon-rule img {
+  width: 50px;
+}
+section#ourmenu span {
+  display: inline-block;
+  vertical-align: middle;
+}
+section#ourmenu .outer-line {
+  width: 25%;
+  border-bottom: 1px solid #244e81;
+}
+section#ourmenu .content-header h2, section#ourmenu .content-header .h2 {
+  color: #eeb311;
+}
+section#ourmenu img.beer-svg {
+  width: 29px;
   transform: rotate(-10deg);
-  opacity: 0.65;
+  margin-right: 0.25rem;
+}
+section#ourmenu .content-body {
+  padding-left: 1rem;
+}
+
+body {
+  margin-top: 75px;
 }
 
 /*# sourceMappingURL=style.css.map */
