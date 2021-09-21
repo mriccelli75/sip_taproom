@@ -19,7 +19,12 @@ a {
     }
 }
 
-
+h1 {
+    font-size: 36px;
+    @include media-breakpoint-up(sm) {
+        font-size: 48px;
+     }
+}
 .display-2 {
     margin-bottom: 1rem;
     text-transform: uppercase;
@@ -29,7 +34,7 @@ a {
     &--intro {
        
         font-weight: 700;
-        font-size: 3.75;
+        font-size: 4.2rem;
         color: white;
         font-family: $headline-font;
 

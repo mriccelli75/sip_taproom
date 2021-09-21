@@ -11169,6 +11169,15 @@ a:hover {
   text-decoration: none;
 }
 
+h1, .h1 {
+  font-size: 36px;
+}
+@media (min-width: 576px) {
+  h1, .h1 {
+    font-size: 48px;
+  }
+}
+
 .display-2 {
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -11178,7 +11187,7 @@ a:hover {
 }
 .display-2--intro {
   font-weight: 700;
-  font-size: 3.75;
+  font-size: 4.2rem;
   color: white;
   font-family: "Oswald", sans-serif;
 }
@@ -11299,7 +11308,6 @@ section#ourmenu {
   padding-bottom: 100px;
   background-image: url(../../images/granite.jpg);
   background-repeat: repeat-x h1;
-  background-repeat-font-size: 4rem;
   background-repeat-color: #222830;
 }
 section#ourmenu .photo-bx--left {
@@ -11366,6 +11374,11 @@ section#ourmenu img.beer-svg {
 }
 section#ourmenu .content-body {
   padding-left: 1rem;
+}
+
+#about-sip {
+  background: #eeb311;
+  padding: 85px 35px;
 }
 
 body {
