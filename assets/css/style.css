@@ -11151,6 +11151,7 @@ textarea.form-control-lg {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Oswald", sans-serif;
   color: #222830;
+  text-transform: uppercase;
 }
 
 p, span, a {
@@ -11224,6 +11225,10 @@ a:hover {
 .menu .navbar-brand:hover, .menu .navbar-brand:focus {
   color: #eeb311;
 }
+.menu .navbar-toggler {
+  color: rgba(0, 0, 0, 0.55);
+  border-color: rgba(0, 0, 0, 0);
+}
 .menu .navbar-nav .nav-item {
   margin-left: 0.5rem;
 }
@@ -11246,6 +11251,7 @@ a:hover {
   background: url(../../images/bar_photos/placeholder_bar_gray.png);
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom: 24px solid #eeb311;
 }
 .intro-section::after {
   content: "";
@@ -11258,17 +11264,81 @@ a:hover {
   opacity: 0.85;
   z-index: 1;
 }
+.intro-section .intro-box .intro-img-box img {
+  display: none;
+}
+@media (min-width: 768px) {
+  .intro-section .intro-box .intro-img-box {
+    max-width: 600px;
+    height: auto;
+    border: 5px solid white;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+  .intro-section .intro-box .intro-img-box img {
+    display: block;
+  }
+}
+.intro-section .hop-art {
+  width: 300px;
+  position: absolute;
+  top: 69px;
+  left: 16px;
+  height: auto;
+}
+@media (min-width: 992px) {
+  .intro-section .hop-art {
+    top: 136px;
+    left: 86px;
+  }
+}
 
 section#ourmenu {
   padding-top: 100px;
   padding-bottom: 100px;
-}
-section#ourmenu h1, section#ourmenu .h1 {
-  font-size: 4rem;
-  color: #222830;
+  background-image: url(../../images/granite.jpg);
+  background-repeat: repeat-x h1;
+  background-repeat-font-size: 4rem;
+  background-repeat-color: #222830;
 }
 section#ourmenu .photo-bx--left {
   margin-left: 0;
+  position: relative;
+  z-index: 2;
+}
+section#ourmenu .photo-bx--left .photo {
+  position: relative;
+}
+section#ourmenu .photo-bx--left:before {
+  content: "";
+  display: block;
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: 0;
+}
+section#ourmenu .photo-bx--right {
+  margin-left: 0;
+  position: relative;
+  z-index: 2;
+}
+section#ourmenu .photo-bx--right .photo {
+  position: relative;
+}
+section#ourmenu .photo-bx--right:before {
+  content: "";
+  display: block;
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 0;
 }
 section#ourmenu div.icon-rule {
   text-align: center;
@@ -11284,7 +11354,7 @@ section#ourmenu span {
 }
 section#ourmenu .outer-line {
   width: 25%;
-  border-bottom: 1px solid #244e81;
+  border-bottom: 1px solid #222830;
 }
 section#ourmenu .content-header h2, section#ourmenu .content-header .h2 {
   color: #eeb311;

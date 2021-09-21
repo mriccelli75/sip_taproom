@@ -6,6 +6,7 @@
     background: url(../../images/bar_photos/placeholder_bar_gray.png);
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: 24px solid $primary-orange;
 
     &::after {
         content: ""; // ::before and ::after both require content
@@ -18,22 +19,46 @@
         opacity: .85;
         z-index: 1;
     }
+    @include media-breakpoint-up(xs) { 
+       .intro-box {
+           .intro-img-box {
+               img {
+                   display: none;
+               }
+           }
+       }
+     }
+     @include media-breakpoint-up(md) { 
+        .intro-box {
+            .intro-img-box {
+                max-width: 600px;
+                height: auto;
+                border: 5px solid white;
+                position: relative;
+                z-index: 2;
+                overflow: hidden;
+                    img {
+                        display: block;
+                    }
+            }
+        }
+        
+      }
+    
+    .hop-art {
+        width: 300px;
+        position: absolute;
+        top: 69px;
+        left: 16px;
+        height: auto;
 
-
-    // .hop-art {
-    //     width: 263px;
-    //     position: absolute;
-    //     top: 69px;
-    //     left: 16px;
-    //     height: auto;
-    //     transform: rotate(-10deg);
-
-    // }
-    // @include media-breakpoint-up(lg) {  
-    //     .hop-art {
-    //     top: 69px;
-    //     left: 32px;
-    // } 
-    //}
+    }
+    @include media-breakpoint-up(lg) {  
+        .hop-art {
+            top: 136px;
+            left: 86px;
+        }
+    } 
+    
 }
 

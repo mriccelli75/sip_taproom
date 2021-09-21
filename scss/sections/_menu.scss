@@ -1,8 +1,10 @@
 section#ourmenu {
     padding-top: 100px;
     padding-bottom: 100px;
+    background-image: url(../../images/granite.jpg);
+    background-repeat: repeat-x
 
-    h1 {
+    h1 {;
         font-size: 4rem;
         color: $dark-gray;
     }
@@ -10,7 +12,44 @@ section#ourmenu {
 
         &--left {
             margin-left: 0;
+            position: relative;
+            z-index: 2;
+            .photo {
+                position: relative;
+            }
+                &:before {
+                    content: '';
+                    display: block;
+                    background: black;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: -10px;
+                    left: -10px;
+                    z-index: 0;
+                }
+           
         }
+        &--right {
+            margin-left: 0;
+            position: relative;
+            z-index: 2;
+            .photo {
+                position: relative;
+            }
+                &:before {
+                    content: '';
+                    display: block;
+                    background: black;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    z-index: 0;
+                }
+        }
+
     }
     div.icon-rule {
         text-align: center;
@@ -29,7 +68,7 @@ section#ourmenu {
       
       .outer-line {
         width: 25%;
-        border-bottom: 1px solid $blue-modern;
+        border-bottom: 1px solid $dark-gray;
       }
       .content-header {
           h2 {
