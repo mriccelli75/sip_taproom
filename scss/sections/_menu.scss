@@ -4,9 +4,8 @@ section#ourmenu {
     background-image: url(../../images/granite.jpg);
     background-repeat: repeat-x
 
-    h1 {;
-        font-size: 4rem;
-        color: $dark-gray;
+    h1 {
+       color: $dark-gray;
     }
     .photo-bx {
 
@@ -79,7 +78,7 @@ section#ourmenu {
         width: 29px;
         transform: rotate(-10deg);
         margin-right: .25rem;
-    }
+        }
     .content-body {
         padding-left: 1rem;
     }

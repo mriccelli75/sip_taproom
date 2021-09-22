@@ -1,0 +1,24 @@
+#about-sip {
+    background: rgba($primary-orange, .5);
+    padding: 85px 35px;
+    background: url("../../images/bar_photos/shot_of_sign.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($primary-orange, .65);
+        z-index: 1;
+
+    }
+    h1, p {
+        position: relative;
+        z-index: 3;
+    }
+}
