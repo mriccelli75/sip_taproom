@@ -11401,9 +11401,10 @@ section#ourmenu .content-body {
 #social-media .social-item {
   text-align: center;
   padding: 1rem;
+  width: 100px;
 }
 #social-media .social-item img {
-  width: 60%;
+  max-width: 100%;
 }
 @media (min-width: 768px) {
   #social-media .social-item {
