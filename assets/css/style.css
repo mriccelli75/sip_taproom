@@ -11376,6 +11376,42 @@ section#ourmenu .content-body {
   padding-left: 1rem;
 }
 
+#social-media {
+  background: #222830;
+  padding: 85px 35px;
+  background: url("../../images/bar_photos/glasses-919071_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#social-media:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 40, 48, 0.85);
+  z-index: 1;
+}
+#social-media h1, #social-media .h1, #social-media p, #social-media .social-item {
+  position: relative;
+  z-index: 3;
+}
+#social-media .social-item {
+  text-align: center;
+  padding: 1rem;
+}
+#social-media .social-item img {
+  width: 60%;
+}
+@media (min-width: 768px) {
+  #social-media .social-item {
+    text-align: center;
+    padding: 0.65rem;
+  }
+}
+
 #about-sip {
   background: rgba(238, 179, 17, 0.5);
   padding: 85px 35px;
