@@ -1,0 +1,43 @@
+#social-media {
+    background: $dark-gray;
+    padding: 85px 35px;
+    background: url("../../images/bar_photos/glasses-919071_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($dark-gray, .85);
+        z-index: 1;
+
+    }
+    h1, p, .social-item {
+        position: relative;
+        z-index: 3;
+    }
+    .social-item {
+        text-align: center;
+        padding: 1rem;
+        img {
+            width: 60%;
+        }
+        
+    }
+    @include media-breakpoint-up(md) { 
+        .social-item {
+            text-align: center;
+            padding: .65rem;
+            // img {
+            //     width: 50%;
+            // }
+            
+        }
+     }
+
+}
