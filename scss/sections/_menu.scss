@@ -79,8 +79,14 @@ section#ourmenu {
         transform: rotate(-10deg);
         margin-right: .25rem;
         }
-    .content-body {
-        padding-left: 1rem;
+    
+    p.menu-subtext {
+        font-style: italic;
+    }
+    .content.wines,
+    .content.beers {
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
 }
     

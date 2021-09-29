@@ -11214,6 +11214,8 @@ h1, .h1 {
 
 .menu {
   background-color: #fff;
+  transition: 0.4s;
+  /* Adds a transition effect when the padding is decreased */
 }
 .menu .brand-logo {
   width: 60px;
@@ -11372,8 +11374,13 @@ section#ourmenu img.beer-svg {
   transform: rotate(-10deg);
   margin-right: 0.25rem;
 }
-section#ourmenu .content-body {
-  padding-left: 1rem;
+section#ourmenu p.menu-subtext {
+  font-style: italic;
+}
+section#ourmenu .content.wines,
+section#ourmenu .content.beers {
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 #social-media {
