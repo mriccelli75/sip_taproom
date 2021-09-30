@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    border-bottom: 24px solid $primary-orange;
 
     &:before {
         content: "";

@@ -11115,7 +11115,7 @@ textarea.form-control-lg {
   }
 }
 .btn {
-  border-radius: 100px;
+  border-radius: 5px;
   border-width: 4px;
   text-transform: uppercase;
 }
@@ -11394,6 +11394,7 @@ section#ourmenu .content.beers {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  border-bottom: 24px solid #eeb311;
 }
 #social-media:before {
   content: "";
