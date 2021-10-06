@@ -11308,6 +11308,10 @@ h1, .h1 {
 #contact-us {
   padding: 85px 35px;
 }
+#contact-us span.required-field {
+  color: #bbb8b8;
+  font-size: 0.85rem;
+}
 
 section#ourmenu {
   padding-top: 100px;

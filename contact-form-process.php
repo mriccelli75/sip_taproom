@@ -20,7 +20,7 @@ if (isset($_POST['Email'])) {
         !isset($_POST['Email']) ||
         !isset($_POST['Message'])
     ) {
-        problem('We're sorry, but there appears to be a problem with the form you submitted.');
+        problem('We are sorry, but there appears to be a problem with the form you submitted.');
     }
 
     $name = $_POST['Name']; // required
@@ -68,8 +68,9 @@ if (isset($_POST['Email'])) {
 ?>
 
     <!-- INCLUDE YOUR SUCCESS MESSAGE BELOW -->
-
-    Thanks for getting in touch. We'll get back to you soon.
+<img src="images/brand/SiP.jpg" alt="">
+   <h1> Thanks for getting in touch. We'll get back to you soon. </h1>
+   <h3><a href="https://siptaproom.com">Return To Sip Taproom</a></h3>
 
 <?php
 }
