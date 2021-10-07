@@ -98,11 +98,6 @@
             <p>We are proud to source locally owned pittsburgh brews. Come enjoy all of pittsburgh's finest in one location.</p>
           </div>
           <div class="content-body">
-            <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-            </div>
             <h5>- Grist House: West Coast IPA ABV: 7.3</h5>
              <p class="menu-subtext">With big aroma and initing bitterness, this beer is a mountain top crusher. Our new 
                West Coast IPA, brewed with Citra, Amarillo, and Waimea will make you want to send that next clean line. 7.3%
@@ -171,26 +166,10 @@
               <p>Complimentary small bites to satisfy your tastebuds.</p>
             </div>
             <div class="content-body">
-              <h5>- Chicken Sandwich One</h5>
-               <p class="menu-subtext">Refreshing aromas of strawberry, cantaloupe, and nectarine followed by notes of citrus. Lively flavors of grapefruit, strawberry, and nectarine fill the palate with subtle notes of lemon custard and kumquat. On the mid-palate, this wine is rich and expansive with bright acidity that carries flavors of raspberry and clementine rind through to a long-lasting, smooth finish</span></p> 
-              <h5>- Chicken Sandwich Two</h5>
-              <p class="menu-subtext">Piper Sonoma Brut, made of 60% Chardonnay, 15% Pinot Noir and 25% Pinot Meunier, has a pale gold color, petite bubbles and delicate aromas of ripe apple, toast and peach. This sparkling wine is dry and fresh with a long elegant finish, possessing crisp citrus flavors with hints of strawberry and vanilla smoke</p> 
-              <h5>- Vinum Cabernet Sauvignon Insider Paso Robles Central Coast 2017</h5>
-              <p class="menu-subtext">This Paso Robles Cabernet Sauvignon has a deep, dark, inky purple color. The aromas are comprised of concentrated blue fruit such as wild huckleberry and blueberries. The mid-palate is mouth coating with ripe cassis and juicy plum with spicy cinnamon-clove spice and generous blackberry flavor. The finish is silky smooth with balanced acidity, soft medium vanilla tannins and long boysenberry textured aria.</p> 
-              <h5>- Montinore Estate Of The Hills Pinot Noir Williamette Valley 2018</h5>
-              <p class="menu-subtext">Established in 1982, Montinore Estate is the largest producer of certified estate wines made from Biodynamic® grapes in the country. With our 200-acre Demeter Certified Biodynamic® and Stellar Certified Organic vineyard located in north Willamette Valley in Oregon, we focus on producing superior Pinot Noirs, cool climate whites, and fascinating Italian</p>  
-              <h5>- Mason Cellars, Sauvignon Blanc Napa Valley</h5>
-              <p class="menu-subtext">Our Sauvignon Blanc greets the nose with tropical fruit, figs, and honey. The palate offers creamy pear and fig flavors before giving way to a long, bright finish with hints of grapefruit.</p>    
-              <h5>- Avalon, Cabernet Sauvignon California</h5>
-              <p class="menu-subtext">Juicy aromas of dark fruit, mocha and spice meet with hints of vanilla. On the palate, black cherry, red raspberry and plum are followed by a long, smooth finish.</p>  
-              <h5>- Artezin Wines, Zinfandel Mendocino County (2017)</h5>
-              <p class="menu-subtext">Artezine Zinfandel is instantly recognizable as a classic, fruit-forward, Zinny Zin. This signature style offers a full-bodied wine with round tannins and momderate alcohol.</p> 
-              <h5>- Terra d'Oro, Zinfandel Amador County (2017)</h5>
-              <p class="menu-subtext">This savory Zinfandel displays vibrant aromas of rich, spicy clove and big, generous fruit with hints of vanilla that entice the nose. An abundance of plums and flavors of dense, juicy blackberries excites the senses with a round mouthfeel of well integrated tannins on the finish.</p> 
-              <h5>- The Hess Collection, Chardonnay Shirtail Rances Monterey County</h5>
-              <p class="menu-subtext">This elegant wine is rich with complex flavors of pear, apple, grapefruit, crisp, mild acidity, oak and vanilla.</p> 
-              <h5>- Montinore Estate, Pinot Gris Willamette Valley</h5>
-              <p class="menu-subtext">This dry style Pino Gris begins with aromatics of bright citrus and tropical fruit that lead to a firm foundation of apple, mango and a hint of savory and spice on the palate, finish crisp and bright.</p> 
+              <h5>- Food items coming soon....</h5>
+               <p class="menu-subtext">Here we will have our food menu items</p> 
+             
+             
           </div>
           </div>
         </div>
@@ -323,41 +302,33 @@
             Send us a message
           </h4>
           <!-- Form -->
-          <form class="block-decoration-2" id="contactForm" method="post" action="contact-form-process.php" class="contact-form">
-
-            <!-- Contact number (hidden) -->
-            <input type="hidden" name="contact_number">
-
+          <form class="block-decoration-2" id="contactForm" method="post" action="contact-form-process.php">
             <!-- Name -->
             <div class="mb-3">
-              <span id="required" class="required-field">Required</span>
-              <label class="visually-hidden" for="Name">Full name</label>
-              <input class="form-control" id="Name" name="name"  type="text" placeholder="Full name" required>
+              <!-- <span id="required" class="required-field">Required</span> -->
+              <label for="Name">Full name</label><span class="required">*</span>
+              <input class="form-control" id="Name" name="Name"  type="text" placeholder="Full name" required>
             </div>
 
             <!-- Email -->
             <div class="mb-3">
-              <span id="required" class="required-field">Required</span>
-              <label class="visually-hidden" for="Email">E-mail address</label>
-              <input class="form-control" name="email" id="Email" type="email" placeholder="E-mail address" required>
+              <!-- <span id="required" class="required-field">Required</span> -->
+              <label for="Email">E-mail address</label><span class="required">*</span>
+              <input class="form-control" name="Email" id="Email" type="email" placeholder="E-mail address" required>
             </div>
 
             <!-- Message -->
             <div class="mb-3">
-              <span class="required-field">Required</span>
-              <label class="visually-hidden" for="Message">Message</label>
-              <textarea class="form-control" id="Message" name="message" rows="9" placeholder="Message"></textarea>
+              <!-- <span class="required-field">Required</span> -->
+              <label for="Message">Message</label><span class="required">*</span>
+              <textarea class="form-control" id="Message" name="Message" rows="9" placeholder="Message"></textarea>
             </div>
-
             <!-- Button -->
             <button class="btn btn-outline-primary" type="submit">
               Send message
             </button>
-
           </form>
-
         </div>
-
       </div>
     </div>
   </div>

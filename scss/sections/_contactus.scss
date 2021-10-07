@@ -1,8 +1,11 @@
 #contact-us {
     padding: 85px 35px;
 
-    span.required-field {
-        color: #bbb8b8;
+    span.required {
+        color: red;
+    }
+    label {
         font-size: .85rem;
+        font-weight: 600;
     }
 }

@@ -1,7 +1,8 @@
 //Button styles
+
 .btn {
-   border-radius: 5px;
-    border-width: 4px;
+   border-radius: 4px;
+    border-width: 2px;
     text-transform: uppercase;
 
     &.btn-primary {
@@ -15,12 +16,12 @@
         border-color: $dark-gray;
     }
     &.btn-outline-primary {
-        color: $blue-modern;
-        border-color: $blue-modern;
+        color: $dark-gray;
+        border-color: $dark-gray;
         &:hover {
-            background-color: transparent;
-            color: $blue-modern;
-            border-color: $blue-modern; 
+            background-color: $dark-gray;
+            color: white;
+            border-color: $dark-gray; 
         }
     }
     &.btn-outline-secondary {
