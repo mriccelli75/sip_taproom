@@ -48,3 +48,18 @@
         }
     }
 }
+//Holiday Hours Alert
+.business-alert {
+    top: 75px;
+    display: flex;
+    justify-content: center;
+    background: $blue-modern;
+    color: white;
+    border: none;
+    border-radius: 0;
+     
+    h5 {
+        color: white;
+        letter-spacing: .04em;
+    }
+}
