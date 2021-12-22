@@ -61,5 +61,21 @@
     h5 {
         color: white;
         letter-spacing: .04em;
+        text-transform: none;
+    }
+    .btn-close {
+        background: none;
+            svg.bi.bi-x {
+                position: absolute;
+                top: 25px;
+                right: 2px;
+            }
+            @media screen and (min-width:960px) {
+                svg.bi.bi-x {
+                    position: absolute;
+                    top: 12px;
+                    right: 2px;
+                }
+            }
     }
 }
