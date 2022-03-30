@@ -5,7 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11149,9 +11149,10 @@ textarea.form-control-lg {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #222830;
-  text-transform: uppercase;
+  text-transform: normal;
+  font-weight: 700;
 }
 
 p, span, a {
@@ -11181,7 +11182,7 @@ h1, .h1 {
 .display-2 {
   margin-bottom: 1rem;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
   position: relative;
   z-index: 3;
 }
@@ -11189,7 +11190,7 @@ h1, .h1 {
   font-weight: 700;
   font-size: 4.2rem;
   color: white;
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 @media (min-width: 992px) {
   .display-2--intro {
@@ -11202,7 +11203,7 @@ h1, .h1 {
   display: block;
   margin-top: 1.2rem;
   text-transform: none;
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
 }
 @media (min-width: 992px) {
@@ -11224,7 +11225,7 @@ h1, .h1 {
 }
 .menu .navbar-brand {
   color: #222830;
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 600;
@@ -11263,7 +11264,7 @@ h1, .h1 {
   border: none;
   border-radius: 0;
 }
-.business-alert h5, .business-alert .h5 {
+.business-alert p {
   color: white;
   letter-spacing: 0.04em;
   text-transform: none;
@@ -11417,11 +11418,6 @@ section#ourmenu img.beer-svg {
 }
 section#ourmenu p.menu-subtext {
   font-style: italic;
-}
-section#ourmenu .content.wines,
-section#ourmenu .content.beers {
-  padding-right: 2rem;
-  padding-left: 2rem;
 }
 
 #social-media {
