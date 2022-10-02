@@ -1,0 +1,28 @@
+.upcoming-events {
+    background: #000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    h1 {
+        color: #fff;
+    }
+    .list-group {
+        h2 {
+            color: $primary-orange;
+        }
+        .list-group-item {
+            position: relative;
+            display: block;
+            padding: 0.5rem 1rem;
+            color: #fff;
+            text-decoration: none;
+            background-color: transparent;
+            border-bottom: 1px solid $primary-orange;
+            h4 {
+                color: #fff;
+            }
+        }
+
+    }
+        
+    
+}
