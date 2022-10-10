@@ -11308,6 +11308,9 @@ h1, .h1 {
 .upcoming-events .list-group .list-group-item h4, .upcoming-events .list-group .list-group-item .h4 {
   color: #fff;
 }
+.upcoming-events .list-group .list-group-item.next h4, .upcoming-events .list-group .list-group-item.next .h4 {
+  color: #eeb311;
+}
 
 .intro-section {
   width: 100%;
