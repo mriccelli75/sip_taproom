@@ -17,12 +17,15 @@
             text-decoration: none;
             background-color: transparent;
             border-bottom: 1px solid $primary-orange;
-            h4 {
-                color: #fff;
-            }
-            &.next h4 {
-                color: $primary-orange;
-            }
+                h4 {
+                    color: #fff;
+                }
+                &.next {
+                    h4 {
+                        color: $primary-orange;
+                    }
+                } 
+                
         }
 
     }
