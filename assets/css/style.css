@@ -11213,6 +11213,10 @@ h1, .h1 {
   }
 }
 
+.beer-type {
+  color: #244e81;
+}
+
 .menu {
   background-color: #fff;
   transition: 0.4s;
