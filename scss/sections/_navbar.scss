@@ -39,6 +39,7 @@
                 font-family: $paragraph-font; 
                 transition: all 0.5s;
                 font-weight: 700;
+                position: relative;
 
                 &:hover,
                 &:focus {
